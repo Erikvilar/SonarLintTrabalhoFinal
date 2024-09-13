@@ -1,0 +1,27 @@
+.user{
+    background-color: green;
+    width: 300px;
+    height: 200px;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+
+}.user h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Poppins",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.user button{
+    width: 100px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}

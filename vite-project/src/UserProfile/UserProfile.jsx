@@ -1,6 +1,6 @@
 
 import user from "./user";
-
+import css from "./UserProfile.module.css"
 const UserProfile = () => {
  
     
@@ -8,10 +8,11 @@ const UserProfile = () => {
 
     return (
 
-      <div>
+      <div className={css.user}>
 		{user.map((pessoa)=>(
-		<div>
-        <h1>{pessoa.name}</h1>
+		<div key={pessoa.id}>
+        <h1>{pessoa.name} gosta de {pessoa.hobby}</h1>
+		<button>+Veja mais sobre {pessoa.name}</button>
 		</div>
 	))}
 
