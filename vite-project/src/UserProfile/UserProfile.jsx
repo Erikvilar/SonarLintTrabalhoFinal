@@ -7,19 +7,14 @@ const UserProfile = () => {
 
 
     return (
+
       <div>
-        <h1>{name}</h1>
-        {user.hobbies.map((hobby, index) => (
-          <p key={index}>{hobby}</p> 
-        ))}
-        <button
-          onClick={() => {
-          }}
-        >
-          Update Profile
-        </button>
-        <div style={{ color: "red" }}>Red text</div>{" "}
- 
+		{user.map((pessoa)=>(
+		<div>
+        <h1>{pessoa.name}</h1>
+		</div>
+	))}
+
       </div>
 	  
     );
