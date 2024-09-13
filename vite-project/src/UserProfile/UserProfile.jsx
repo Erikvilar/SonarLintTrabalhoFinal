@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-const UserProfile = () => {
-  const UserProfile = ({ user }) => {
+const UserProfile = ({user}) => {
+ 
 
 
 	
@@ -44,8 +44,4 @@ const UserProfile = () => {
       </div>
     );
   };
-
-
-
-};
 export default UserProfile;
