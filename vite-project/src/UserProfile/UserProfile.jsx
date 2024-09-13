@@ -1,4 +1,4 @@
-import css from "./UserProfile.module.css";
+
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
@@ -8,6 +8,8 @@ const UserProfile = () => {
 
 
     const [name, setName] = useState(user.name);
+
+	
 
     const { userX } = { ...name };
 
