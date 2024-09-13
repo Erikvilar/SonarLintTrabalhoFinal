@@ -6,7 +6,7 @@ const UserProfile = () => {
   const UserProfile = ({ user }) => {
 
 
-
+	
     const [name, setName] = useState(user.name);
 
 	
@@ -30,8 +30,8 @@ const UserProfile = () => {
     return (
       <div>
         <h1>{name}</h1>
-        {user.hobbies.map((hobby) => (
-          <p>{hobby}</p> 
+        {user.hobbies.map((hobby, index) => (
+          <p key={index}>{hobby}</p> 
         ))}
         <button
           onClick={() => {
