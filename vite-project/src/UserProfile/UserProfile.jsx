@@ -11,17 +11,15 @@ const UserProfile = () => {
 
 	
 
-    const { userX } = { ...name };
+  
 
 
     useEffect(() => {
-      setName(user.name); o
+      setName(user.name); 
     }, [user]);
 
 
-    const unusedFunction = () => {
-      console.log("This function is never used");
-    };
+
 
 
     useEffect(() => {
