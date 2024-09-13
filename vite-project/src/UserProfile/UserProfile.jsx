@@ -1,30 +1,9 @@
 
-import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
+import user from "./user";
 
-const UserProfile = ({user}) => {
+const UserProfile = () => {
  
-
-
-	
-    const [name, setName] = useState(user.name);
-
-	
-
-  
-
-
-    useEffect(() => {
-      setName(user.name); 
-    }, [user]);
-
-
-
-
-
-    useEffect(() => {
-      setName(user.name);
-    }, []);
+    
 
 
     return (
@@ -42,6 +21,8 @@ const UserProfile = ({user}) => {
         <div style={{ color: "red" }}>Red text</div>{" "}
  
       </div>
+	  
     );
+	
   };
 export default UserProfile;
