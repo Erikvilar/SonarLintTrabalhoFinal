@@ -25,7 +25,7 @@ const UserProfile = () => {
     useEffect(() => {
       setName(user.name);
     }, []);
-
+	
 
     return (
       <div>
