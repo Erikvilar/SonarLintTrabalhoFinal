@@ -25,7 +25,7 @@ const UserProfile = () => {
     useEffect(() => {
       setName(user.name);
     }, []);
-	
+
 
     return (
       <div>
@@ -46,11 +46,6 @@ const UserProfile = () => {
   };
 
 
-  UserProfile.propTypes = {
-    user: PropTypes.shape({
-      name: PropTypes.string,
-      hobbies: PropTypes.arrayOf(PropTypes.string),
-    }).isRequired,
-  };
+
 };
 export default UserProfile;
